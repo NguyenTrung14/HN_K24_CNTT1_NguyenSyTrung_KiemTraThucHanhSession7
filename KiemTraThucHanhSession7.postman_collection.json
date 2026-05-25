@@ -1,0 +1,302 @@
+{
+  "info": {
+    "_postman_id": "7524b7c6-f0e1-469d-88f5-101172ef6dfd",
+    "name": "KiemTraThucHanhSession7",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48431167",
+    "_collection_link": "https://go.postman.co/collection/48431167-7524b7c6-f0e1-469d-88f5-101172ef6dfd?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/students/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get by id not found",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fullName\":\"Nguyen Hoang Phuc\",\r\n    \"email\":\"phuc@gmail.com\",\r\n    \"gpa\":\"3.0\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fullName\":\"Nguyen Manh Thang\",\r\n    \"email\":\"thang@gmail.com\",\r\n    \"gpa\":\"2.8\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "put not found",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fullName\":\"Nguyen Manh Thang\",\r\n    \"email\":\"thang@gmail.com\",\r\n    \"gpa\":\"2.8\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch gpa",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"gpa\":\"3.3\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch email",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"nguyentrrung27092006@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch not found",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"nguyentrung27092006@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"gpa\":\"3.3\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete not found",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"gpa\":\"3.3\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "students",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
